@@ -3,14 +3,12 @@
 <html lang="es">
 
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width"> <!-- responsive -->
         <title>Encriptar/Desencriptar</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,300;1,300&family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -22,21 +20,21 @@
     
         <main>
             <section>
-                <label for="texto"></label>
-                <textarea cols="70" rows="10" id="texto" class="input-padron" required></textarea>
+                <textarea cols="70" rows="10" required>Ingrese el texto aquí</textarea>
 
-                <p>Sólo mínusculas sin acentos.</p>
-
-                <input type="submit" value="Encriptar" class="encriptar">
+                <nav>
+                    <label for="solominusculas">Sólo mínusculas sin acentos.</label>
+                    <input type="submit" id="solominusculas" value="Encriptar" class="encriptar">
                 
-                <input type="submit" value="Desencriptar" class="desencriptar">
+                    <input type="submit" value="Desencriptar" class="desencriptar">
+                </nav> 
             </section>
             
             <section>
-                <label for="resultado"></label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-
-                <input type="submit" value="Copiar" class="copiar">
+                <textarea cols="70" rows="10" required></textarea>
+                <nav>
+                    <input type="submit" value="Copiar" class="copiar">
+                </nav>
             </section> 
         </main>
         <footer>
