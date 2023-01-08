@@ -14,28 +14,32 @@
     <body>
         <header>
             <div>
-                <h1><img src="imagenes/Vector.png"></h1>
+                <h1><img src="imagenes/Vector.png" alt="Logo de Alura"></h1>
             </div>
         </header>
     
         <main>
             <section>
-                <textarea cols="70" rows="10" required>Ingrese el texto aquí</textarea>
+                
+                <textarea id="textousuario" cols="70" rows="10" placeholder="Ingrese el texto aquí" required></textarea>
 
-                <p>⚠ Sólo mínusculas sin acentos.</p>
+                
                 <nav class="botones-principales">
-                    <input type="submit" id="solominusculas" value="Encriptar" class="encriptar">
-                    <input type="submit" value="Desencriptar" class="desencriptar">
+                    <label class="encriptar">⚠ Sólo mínusculas sin acentos.</lavel>
+                    <button id="botonencriptar">Encriptar</button> 
+                    <!-- <input type="button" value="Encriptar" id="boton_encriptar"> -->
+                    <input type="button" value="Desencriptar" class="desencriptar">
                 </nav> 
             </section>
 
             <section>
 
-                <h1><img src="imagenes/1.png"></h1>
+                <!-- <h1><img src="imagenes/1.png"></h1> -->
 
 
-                <!-- <textarea cols="70" rows="10" required></textarea>
-                <nav>
+                <textarea id="textorespuesta" cols="70" rows="10" required></textarea>
+                
+                <!-- <nav>
                     <input type="submit" value="Copiar" class="copiar">
                 </nav> -->
             </section> 
