@@ -33,4 +33,20 @@ function mostrarRespuesta() {
     }
 }
 
+/* function copiar() {
+    let copiarTexto = document.querySelector("#textorespuesta");
+    copiarTexto.selected();
+    document.execCommandId(copiar);
+}
+
+document.querySelector("#botoncopiar").addEventListener("click", copiar); */
+
+
+function copy() {
+    let copyText = document.querySelector("#textorespuesta");
+    copyText.select();
+    document.execCommand("copy");
+  }
+  
+  document.querySelector("#copy").addEventListener("click", copy);
 
