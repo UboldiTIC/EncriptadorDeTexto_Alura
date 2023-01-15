@@ -1,29 +1,39 @@
+//ENCRIPTADOR:
 
-function validarTextoUsuario() {
-
-    let texto = document.querySelector("#textousuario");    //"dante come lazaña"; 
+function validarTextoUsuarioEncriptar() {
+    let texto = document.querySelector("#textousuario").value;    
     let pattern = /[A-Záéíóú]/;
     let resultado = pattern.test(texto);
-    console.log(resultado);
-} 
-
-validarTextoUsuario(); // si es true = alert
-
-// Ahora agregar la función dentro de un if- true alerta - false continua el encriptador. 
-//Solo se debe ejecutar cuando se presiona el botón. 
+    if (resultado === true) {
+        alert("Sólo mínusculas sin acentos.");
+    } else {
+        encriptar();
+    }
+}
 
 function encriptar() {
-    let textoUsuario = document.querySelector("#textousuario").value; 
-    // función checkinput - 
+    let textoUsuario = document.querySelector("#textousuario").value;
     let textoEncriptado = textoUsuario.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     document.querySelector("#textorespuesta").value = textoEncriptado;
     document.querySelector("#textousuario").value;
-    mostrarRespuesta();
+     mostrarRespuesta();   
 }
 
-
 let botonEncriptar = document.querySelector("#botonencriptar");
-botonEncriptar.onclick = encriptar;
+botonEncriptar.onclick = validarTextoUsuarioEncriptar;
+
+//DESENCRIPTADOR:
+
+function validarTextoUsuarioDesencriptar() {
+    let texto = document.querySelector("#textousuario").value;    
+    let pattern = /[A-Záéíóú]/;
+    let resultado = pattern.test(texto);
+    if (resultado === true) {
+        alert("Sólo mínusculas sin acentos.");
+    } else {
+        desencriptar();
+    }
+}
 
 function desencriptar() {
     let textoUsuario = document.querySelector("#textousuario").value;
@@ -34,7 +44,9 @@ function desencriptar() {
 }
 
 let botonDesencriptar = document.querySelector("#botondesencriptar");
-botonDesencriptar.onclick = desencriptar;
+botonDesencriptar.onclick = validarTextoUsuarioDesencriptar;
+
+//MOSTRAR RESPUESTA:
 
 document.getElementById("respuestamostrada").style.display = "none";
 
@@ -48,7 +60,8 @@ function mostrarRespuesta() {
     }
 }
 
-//ver metodo navigator clipboard
+//COPIAR TEXTO:
+
 function copy() {
     let copyText = document.querySelector("#textorespuesta");
     copyText.select();
