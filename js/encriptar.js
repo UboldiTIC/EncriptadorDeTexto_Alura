@@ -1,18 +1,33 @@
+
+function validarTextoUsuario() {
+
+    let texto = document.querySelector("#textousuario");    //"dante come lazaña"; 
+    let pattern = /[A-Záéíóú]/;
+    let resultado = pattern.test(texto);
+    console.log(resultado);
+} 
+
+validarTextoUsuario(); // si es true = alert
+
+// Ahora agregar la función dentro de un if- true alerta - false continua el encriptador. 
+//Solo se debe ejecutar cuando se presiona el botón. 
+
 function encriptar() {
-    let textoUsuario = document.querySelector("#textousuario").value;
-    let textoEncriptado = textoUsuario.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
-    /* let textoEncriptado = textoUsuario.replace[(/a/g, "ai") && (/e/g, "enter") && (/i/g, "imes") && (/o/g, "ober") && (/u/g, "ufat")]; */
+    let textoUsuario = document.querySelector("#textousuario").value; 
+    // función checkinput - 
+    let textoEncriptado = textoUsuario.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     document.querySelector("#textorespuesta").value = textoEncriptado;
     document.querySelector("#textousuario").value;
     mostrarRespuesta();
 }
+
 
 let botonEncriptar = document.querySelector("#botonencriptar");
 botonEncriptar.onclick = encriptar;
 
 function desencriptar() {
     let textoUsuario = document.querySelector("#textousuario").value;
-    let textoDesencriptado = textoUsuario.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+    let textoDesencriptado = textoUsuario.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
     document.querySelector("#textorespuesta").value = textoDesencriptado;
     document.querySelector("#textousuario").value;
     mostrarRespuesta();
@@ -33,20 +48,12 @@ function mostrarRespuesta() {
     }
 }
 
-/* function copiar() {
-    let copiarTexto = document.querySelector("#textorespuesta");
-    copiarTexto.selected();
-    document.execCommandId(copiar);
-}
-
-document.querySelector("#botoncopiar").addEventListener("click", copiar); */
-
-
+//ver metodo navigator clipboard
 function copy() {
     let copyText = document.querySelector("#textorespuesta");
     copyText.select();
     document.execCommand("copy");
-  }
+}
   
-  document.querySelector("#copy").addEventListener("click", copy);
+document.querySelector("#copy").addEventListener("click", copy);
 
