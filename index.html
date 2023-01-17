@@ -14,20 +14,20 @@
     <body>
         <header>
             <div>
-                <h1><img src="imagenes/Vector.png" alt="Logo de Alura"></h1>
+                <img class="logo" src="imagenes/Vector.png" alt="Logo de Alura">
             </div>
         </header>
     
         <main>
             <section>
-                
-                <textarea id="textousuario" cols="70" rows="10" placeholder="Ingrese el texto aquí" required></textarea>
-
-                <nav class="botones-principales">
-                    <label class="encriptar">⚠ Sólo mínusculas sin acentos.</lavel>
-                    <button id="botonencriptar">Encriptar</button> 
-                    <button id="botondesencriptar">Desencriptar</button>
-                </nav>
+                <textarea class="text-area" id="textousuario" cols="30" rows="10" placeholder="Ingrese el texto aquí" required></textarea>
+                <div>
+                    <h6 class="informacion">Sólo mínusculas sin acentos.</h6>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" id="botonencriptar">Encriptar</button> 
+                    <button class="boton-desencriptar" id="botondesencriptar">Desencriptar</button>
+                </div>
 
             </section>
 
@@ -36,12 +36,12 @@
                     <h1><img src="imagenes/1.png"></h1>
                 </div>
                 <div id="respuestamostrada">
-                    <textarea id="textorespuesta" type="text" cols="70" rows="10" required></textarea> 
-                    <button id="copy">Copiar</button>
+                    <textarea class="respuesta" id="textorespuesta" type="text" cols="30" rows="10" required></textarea> 
+                    <button class="boton-copiar" id="copy">Copiar</button>
                 </div>
             </section> 
         </main>
-        <footer>
+        <footer calss="pie">
             <p>Creado por Solmar Uboldi - Estudiante de Alura Latam - ONE Oracle Next Education</p>
         </footer>
         <script src="./js/encriptar.js"></script>
