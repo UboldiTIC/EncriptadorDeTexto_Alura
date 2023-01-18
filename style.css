@@ -7,8 +7,8 @@
 }
 
 .logo{
-    padding-top: 20px;
-    margin-left: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
     width: 3%;
 }
 
@@ -42,14 +42,26 @@ main{
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
-    margin-top: 20px;
     position: fixed;
-    padding: 10px;
 }
 
-.mensaje:focus {
+.respuesta-mostrada{
+    width: 400px;
+    height: 780px;
+    left: 800px;
+    top: 20px;
+    background: white;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    position: fixed;
+    padding: 15px;
+} 
+
+/* .mensaje:focus {
     outline: none;
-}
+} */
 
 .botones{
     display: flex;
@@ -86,7 +98,7 @@ main{
     height: 67px;
     position: absolute;
     width: 336px;
-    left: 935px;
+    left: 945px;
     top: 740px;
     z-index: 2
     
@@ -97,10 +109,36 @@ main{
     font-size: 18px;
 }
 
-/* 
-
 .pie{
+background-color: #0A3871;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* or 48px */
+text-align: center;
+}
 
-} */
+.logopie{
+    margin-right: 3px;
+    margin-left: 5px;
+    width: 10%;
+}
 
+.botonpie{
+    background-color: #F3F5FC;
+    border: 1px solid #F3F5FC;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 55px;
+    width: 220px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
 
+.botonpie:hover{
+    transform: scale(1.2);
+}
