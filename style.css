@@ -22,14 +22,19 @@ main{
     border: none;
     color: #0A3871;
     margin-top: 90px;
-    /* text-transform: lowercase; */
+   /*  text-transform: lowercase; */
 }
 
 ::placeholder {color: #0A3871}
     .text-area:focus {
         outline: none;
     }
+
 .respuesta{
+    width: 400px;
+    height: 780px;
+    left: 800px;
+    top: 20px;
     background: white;
     /* background-image: url("imagenes/1.png");
     background-repeat: no-repeat; */
@@ -39,6 +44,7 @@ main{
     margin-left: 98px;
     margin-top: 20px;
     position: fixed;
+    padding: 10px;
 }
 
 .mensaje:focus {
@@ -61,8 +67,8 @@ main{
 }
 
 .boton-desencriptar{
-   background: #D8DFE8;
-   border: 1px solid #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
@@ -72,15 +78,18 @@ main{
 }
 
 .boton-copiar{
+    box-sizing: border-box;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
     position: absolute;
     width: 336px;
+    left: 935px;
+    top: 740px;
+    z-index: 2
+    
 }
 
 .informacion{
@@ -94,8 +103,4 @@ main{
 
 } */
 
-/* body{
-    font-family: 'Inter', sans-serif;
-    background: lightblue;
-} */
 

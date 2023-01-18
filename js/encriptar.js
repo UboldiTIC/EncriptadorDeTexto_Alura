@@ -16,7 +16,7 @@ function encriptar() {
     let textoEncriptado = textoUsuario.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     document.querySelector("#textorespuesta").value = textoEncriptado;
     document.querySelector("#textousuario").value;
-     mostrarRespuesta();   
+    mostrarRespuesta();   
 }
 
 let botonEncriptar = document.querySelector("#botonencriptar");
