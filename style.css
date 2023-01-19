@@ -21,7 +21,7 @@ main{
 .text-area{
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    margin-top: 60px;
    /*  text-transform: lowercase; */
 }
 
@@ -47,7 +47,7 @@ main{
 
 .respuesta-mostrada{
     width: 400px;
-    height: 780px;
+    height: 750px;
     left: 1000px;
     top: 20px;
     background: white;
@@ -99,7 +99,7 @@ main{
     position: absolute;
     width: 336px;
     left: 1147px;
-    top: 740px;
+    top: 706px;
     z-index: 2
     
 }
@@ -118,6 +118,7 @@ font-size: 32px;
 line-height: 150%;
 /* or 48px */
 text-align: center;
+height: 200px;
 }
 
 .logopie{
@@ -142,3 +143,9 @@ text-align: center;
 .botonpie:hover{
     transform: scale(1.2);
 }
+
+/* @media screen and (max-width:480px){
+    .respuesta, .respuesta-mostrada .boton-copiar .botones{
+        width: auto;
+    }
+} */
