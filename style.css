@@ -22,7 +22,6 @@ main{
     border: none;
     color: #0A3871;
     margin-top: 60px;
-   /*  text-transform: lowercase; */
 }
 
 ::placeholder {color: #0A3871}
@@ -36,8 +35,6 @@ main{
     left: 1000px;
     top: 20px;
     background: white;
-    /* background-image: url("imagenes/1.png");
-    background-repeat: no-repeat; */
     border: none;
     border-radius: 24px;
     color: #0A3871;
@@ -58,10 +55,6 @@ main{
     position: fixed;
     padding: 15px;
 } 
-
-/* .mensaje:focus {
-    outline: none;
-} */
 
 .botones{
     display: flex;
@@ -116,7 +109,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 32px;
 line-height: 150%;
-/* or 48px */
 text-align: center;
 height: 200px;
 }
@@ -143,9 +135,3 @@ height: 200px;
 .botonpie:hover{
     transform: scale(1.2);
 }
-
-/* @media screen and (max-width:480px){
-    .respuesta, .respuesta-mostrada .boton-copiar .botones{
-        width: auto;
-    }
-} */
