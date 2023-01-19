@@ -33,7 +33,7 @@ main{
 .respuesta{
     width: 400px;
     height: 780px;
-    left: 800px;
+    left: 1000px;
     top: 20px;
     background: white;
     /* background-image: url("imagenes/1.png");
@@ -48,7 +48,7 @@ main{
 .respuesta-mostrada{
     width: 400px;
     height: 780px;
-    left: 800px;
+    left: 1000px;
     top: 20px;
     background: white;
     border: none;
@@ -98,7 +98,7 @@ main{
     height: 67px;
     position: absolute;
     width: 336px;
-    left: 945px;
+    left: 1147px;
     top: 740px;
     z-index: 2
     
