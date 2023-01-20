@@ -13,6 +13,7 @@ main{
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .textarea-usuario{
@@ -24,11 +25,15 @@ main{
     color: #0A3871;
     background-color: #F3F5FC;
     border: none;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin-bottom: 5px;
 }
 
 .informacion{
     width: 205px;
     height: 18px;
+    margin-left: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -68,56 +73,37 @@ main{
 }
 
 .respuesta{
-    /* position: absolute; */
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-
-    /* White */
-
-    background: #FFFFFF;
-    /* shadow */
-
+    width: 350px;
+    height: 630px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
 .textarea-respuesta{
-   
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-
-    /* White */
-
+    width: 350px;
+    height: 630px;
     background: #FFFFFF;
-    /* shadow */
-
+    background-color: #F3F5FC;
+    border: none;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+
 }
 
 .boton-copiar{
     box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
 
-    /* position: absolute; */
+    position: absolute;
+
     width: 336px;
     height: 67px;
     left: 1032px;
-    top: 885px;
-
-    /* Dark blue/dark-blue-300 */
-
+    top: 700px;
     border: 1px solid #0A3871;
     border-radius: 24px;
 }
@@ -160,7 +146,6 @@ height: 200px;
 
 @media screen and (max-width:480px){
     .textarea-usuario, .botones-encriptador{
-        display: flex;
-        flex-wrap: wrap;
+        
     }
 }
