@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width"> <!-- responsive -->
+        <meta name="viewport" content="width=device-width">
         <title>Encriptar/Desencriptar</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
@@ -20,11 +20,11 @@
     
         <main>
             <section>
-                <textarea class="text-area" id="textousuario" cols="30" rows="10" placeholder="Ingrese el texto aquí" required></textarea>
+                <textarea class="textarea-usuario" id="textousuario" cols="35" rows="12" placeholder="Ingrese el texto aquí" required></textarea>
                 <div>
                     <h6 class="informacion">❗Sólo mínusculas sin acentos.</h6>
                 </div>
-                <div class="botones">
+                <div class="botones-encriptador">
                     <button class="boton-encriptar" id="botonencriptar">Encriptar</button> 
                     <button class="boton-desencriptar" id="botondesencriptar">Desencriptar</button>
                 </div>
@@ -33,11 +33,15 @@
 
             <section>
                 <div id="respuestainicial">
-                    <img class="respuesta" src="imagenes/1.png">
+                    <img class="respuesta" src="imagenes/1.png" alt="Ingresar Texto">
                 </div>
                 <div id="respuestamostrada">
-                    <textarea class="respuesta-mostrada" id="textorespuesta" type="text" cols="30" rows="10" required></textarea> 
-                    <button class="boton-copiar" id="copy">Copiar</button>
+                    <ul class="area-respuesta">
+                        <li>
+                            <textarea class="textarea-respuesta" id="textorespuesta" type="text" cols="17" rows="13" required></textarea> 
+                            <button class="boton-copiar" id="copy">Copiar</button>
+                        </li>
+                    </ul>
                 </div>
             </section> 
         </main>
