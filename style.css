@@ -35,7 +35,6 @@ main{
 .informacion{
     width: 205px;
     height: 18px;
-    margin-left: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -118,7 +117,6 @@ main{
     box-sizing: border-box;
     display: flex;
     flex-direction: column-reverse;
-    align-items: flex-start;
     align-items: center;
     padding: 24px;
     gap: 8px;
